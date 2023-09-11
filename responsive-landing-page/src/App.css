@@ -1,6 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Fugaz+One&family=Righteous&family=Rubik+Glitch&family=Yellowtail&display=swap');
+
 *{
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-  
+}
+
+body{
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+/*====== HERO =======*/
+/* Hero.css */
+
+.hero-container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Chakra Petch";
+  background-image: url("./assets/planet-galaxy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-container h1{
+  font-weight: 700;
+  font-size: 70px;
 }
