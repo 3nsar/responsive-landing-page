@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react'
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-scroll'
+import abstr from '../assets/rtlogo.jpg'
 
 const Navbar = () => {
 
@@ -16,8 +17,9 @@ const Navbar = () => {
   return (
   <div className="navbar-container ">
 
-
-      <h1 onClick={()=>navigate('/main')}>ART</h1>
+      <h1 onClick={()=>navigate('/main')}>ART</h1> 
+      
+      
 
       <div className='nav-icon' onClick={handleNavClick}>
       {showNav ? <AiOutlineClose fontSize="25px"/> : <FaBars fontSize="25px"/>}
