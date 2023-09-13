@@ -18,8 +18,8 @@ const Hero = () => {
        </motion.div>
         
         <div className="hero-btns">
-            <button>ABOUT</button>
-            <button>COLLECTION</button>
+            <button>About</button>
+            <button>Collection</button>
         </div>
     </div>
   )

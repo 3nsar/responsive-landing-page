@@ -37,11 +37,7 @@ const Navbar = () => {
                    Projects
                 </Link>
               </li> 
-               <li>              
-                <Link activeClass="active" to="contact-container" smooth={true}  duration={500}>
-                 Contact
-                </Link>
-                </li> 
+
       </ul>
 
     </div>

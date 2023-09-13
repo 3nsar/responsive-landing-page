@@ -6,7 +6,7 @@
 }
 
 body{
-  background-color: blue;
+  background-color: #ea00ff;
   font-family: Arial, sans-serif;
   color: #ffffff;
 }
@@ -160,9 +160,18 @@ body{
 
 /*======= CARD ========*/
 
-.card-container{
+/*.card-container{
   height: 100vh;
   background-image: linear-gradient(to top,  #000000 0%,  #ea00ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.card-container{
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
 }
 
 .card {
@@ -170,6 +179,7 @@ body{
   border-radius: 5px;
   padding: 10px;
   width: 300px;
+  height: 350px;
   margin: 0px 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
