@@ -42,7 +42,7 @@ body{
 }
 
 .navbar-list li:hover{
-  color: #ea00ff;
+  color: #cccccc;
   transition: all 0.5s ease;
 
 }
@@ -74,7 +74,7 @@ body{
 @media (max-width: 1070px) {
 
   .navbar-container{
-    background-color: #00d9ff;
+    background-color: #ea00ff;
   }
 
   .navbar-container h1{
@@ -119,7 +119,7 @@ body{
   }
 
   .show li:hover{
-    background-color: #00d9ff;
+    background-color: #ea00ff;
     color: #fff;
   }
 }
