@@ -34,7 +34,7 @@ const Navbar = () => {
               </li> 
               <li>
               <Link activeClass="active" to="projects-container" smooth={true}  duration={500}>
-                   Projects
+                   Collection
                 </Link>
               </li> 
 
