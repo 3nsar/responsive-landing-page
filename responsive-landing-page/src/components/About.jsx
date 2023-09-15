@@ -1,5 +1,6 @@
 import React from 'react'
 import {motion} from "framer-motion"
+import robot from '../assets/robot1.jpg'
 
 const About = () => {
   return (
@@ -14,7 +15,10 @@ const About = () => {
           <h1>ABOUT </h1> 
     
        </motion.div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero beatae delectus culpa. Molestiae aliquam velit quasi modi ut consequatur vel, asperiores possimus consectetur delectus tempora repellendus temporibus distinctio facere.</p>
+        <div className="about-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vero beatae delectus culpa. Molestiae aliquam velit quasi modi ut consequatur vel, asperiores possimus consectetur delectus tempora repellendus temporibus distinctio facere.</p>
+          <img src={robot} alt="pic" height={300}/>
+        </div>
     </div>
   )
 }
