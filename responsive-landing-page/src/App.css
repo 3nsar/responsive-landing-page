@@ -196,3 +196,11 @@ body{
 
 /*========= About ==========*/
 
+.about-container{
+  height: 100vh;
+} 
+
+.about-container p{
+  max-width: 500px;
+
+}

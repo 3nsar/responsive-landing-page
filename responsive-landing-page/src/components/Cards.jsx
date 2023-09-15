@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import robot from '../assets/robot1.jpg';
-import {motion} from "framer-motion"
+
 
 const Cards = () => {
   return (
