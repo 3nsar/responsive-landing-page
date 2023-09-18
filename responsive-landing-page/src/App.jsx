@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import CardSlider from './components/CardSlider'
 import About from './components/About'
+import Gallery from './components/Gallery'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Hero/>
       <CardSlider/>
       <About/>
+      <Gallery/>
     </div>
   )
 }
