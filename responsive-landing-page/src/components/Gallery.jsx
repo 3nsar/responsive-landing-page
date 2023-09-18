@@ -21,11 +21,14 @@ const Gallery = () => {
     return (
         <div className='gallery-container'>
             <h1>GALLERY</h1>
+            <div className="gallery-content">
+ 
             {post.map((item) => (
                 <div key={item.id}>
                     <img src={item.images[0]} alt='pic'/>
                 </div>
             ))}
+            </div>
         </div>
     )
 }
