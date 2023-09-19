@@ -5,18 +5,14 @@ const Gallery = () => {
     const [post, setPost] = useState([])
     const url = "https://dummyjson.com/products/"
     
-    useEffect(() => {
-        const fetchPost = async () => {
-            try {
-                const res = await axios.get(url)
-                setPost(res.data.products) // Assuming "products" is the array you want to map
-                console.log(res.data)
-            } catch (error) {
-                console.error('Error fetching data:', error)
-            }
+    useEffect(()=>{
+        const fetchData = async()=>{
+            const res = await axios.get(url)
+            setPost(res.data.products)
+            console.log(res.data)
         }
-        fetchPost()
-    }, [url])
+        fetchData()
+    },[]);
 
     return (
         <div className='gallery-container'>

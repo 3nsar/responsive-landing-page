@@ -189,6 +189,7 @@ body{
   width: 80%;
   margin: 0 auto;
   height: 100vh;
+
 }
 
 .card {
@@ -294,14 +295,47 @@ body{
 
 
 .gallery-container img{
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
+  border-radius: 20px;
 }
 
+.gallery-container img:hover{
+  transition: transform 0.3s;
+  transform: scale(1.05);
+  cursor: pointer;
+}
 
 .gallery-content{
   display: grid;
   grid-template-columns: repeat(5,100px);
   column-gap: 120px;
   row-gap: 50px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+  .gallery-container img {
+    height: 150px; 
+    width: 150px; 
+  }
+
+  .gallery-content {
+    grid-template-columns: repeat(4, 100px); 
+    column-gap: 100px; 
+    row-gap: 50px; 
+  }
+}
+
+@media (max-width: 800px) {
+  .gallery-container img {
+    height: 140px; 
+    width: 140px; 
+  }
+
+  .gallery-content {
+    grid-template-columns: repeat(3, 100px); 
+    column-gap: 60px; 
+    row-gap: 30px; 
+  }
 }
