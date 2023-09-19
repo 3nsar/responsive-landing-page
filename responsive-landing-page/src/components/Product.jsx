@@ -8,36 +8,41 @@ const Product = () => {
   const {id} = useParams()
   const url = `https://dummyjson.com/products/${id}`
   const[product, setProduct] = useState([])
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
 
   useEffect(()=>{
     const fetchData = async ()=>{
+
       setLoading(true)
       const res = await axios.get(url)
       console.log(res.data)
       setProduct(res.data)
       setLoading(false)
+      
     }
     
     fetchData()
+   
   },[id])
 
 
   if(loading){
-  return (
-
-      <div className='loading-container'>LOADING....</div>
-    )
+      return (
+        <div className='loading-container'>LOADING....</div>
+      )
   }else{
     return(
       <div className='product-container'>
       <div className="product-content">
-      <img src={product.thumbnail} alt="pic" />
+      <img src={product.thumbnail} alt=" " />
         <p>{product.brand}</p>
         <p>{product.title}</p>
         <p>{product.price}$</p>
       </div>
-      <Link  to={`/product/${product.id + 1}`}><button>NEXT</button></Link>
+      <div className="product-btns">
+          <Link  to={`/product/${product.id - 1}`}><button>BACK</button></Link>
+          <Link  to={`/product/${product.id + 1}`}><button>NEXT</button></Link>  
+      </div>
     </div>
     )
   }

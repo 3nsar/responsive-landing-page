@@ -2,11 +2,13 @@ import React, { useContext, useState, useEffect } from 'react'
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-scroll'
-
+import { useNavigate } from 'react-router'
+import {motion} from "framer-motion"
 
 const Navbar = () => {
 
   const [showNav, setShowNav] = useState(false);
+  const navigate = useNavigate()
 
 
   const handleNavClick = () => {
@@ -17,9 +19,14 @@ const Navbar = () => {
   return (
   <div className="navbar-container ">
 
-      <h1 onClick={()=>navigate('/main')}>ART</h1> 
-      
-      
+     <motion.div 
+        initial={{opacity: 0, scale: 0, x: 400}}
+        whileInView={{opacity: 1, scale: 1, x:0}}
+        transition={{duration: 0.7}}
+        viewport={{once: true}}
+        >
+          <h1 onClick={()=>navigate('/')}>ART</h1> 
+      </motion.div>
 
       <div className='nav-icon' onClick={handleNavClick}>
       {showNav ? <AiOutlineClose fontSize="25px"/> : <FaBars fontSize="25px"/>}
@@ -27,16 +34,8 @@ const Navbar = () => {
 
 
       <ul className={`navbar-list ${showNav ? 'show' : ''}`}>
-      <li>
-                <Link activeClass="active" to="about-container" smooth={true}  duration={500}>
-                   About
-                </Link>
-              </li> 
-              <li>
-              <Link activeClass="active" to="projects-container" smooth={true}  duration={500}>
-                   Collection
-                </Link>
-              </li> 
+              <li onClick={()=>navigate('/')}>About</li>
+              <li onClick={()=>navigate('/')}>Gallery</li>
 
       </ul>
 

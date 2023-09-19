@@ -52,6 +52,10 @@ body{
   color: #ffffff;
 }
 
+.navbar-container h1:hover{
+  cursor: pointer;
+}
+
 .navbar-list{
   display: flex;
   align-items: center;
@@ -78,8 +82,9 @@ body{
   }
 
   .navbar-container h1{
-    color: white;
+    color: #ffffff;
   }
+
 
   .nav-icon {
     display: flex;
@@ -374,11 +379,16 @@ body{
   margin-bottom: 10px;
 }
 
-.product-container button{
-  margin-top: 20px;
-  padding: 1rem;
+.product-btns {
+  display: flex;
+
 }
-.product-container button:hover{
+.product-btns  button{
+  padding: 1rem;
+  margin: 0 10px;
+  margin-top: 20px;
+}
+.product-btns  button:hover{
   cursor: pointer;
 }
 /*========== Loading ========*/
@@ -389,6 +399,7 @@ body{
   justify-content: center;
   height: 100vh;
   font-size: 50px;
+  font-weight: 700;
   color: #ea00ff;
   background-color: #000000;
 }

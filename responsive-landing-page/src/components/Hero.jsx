@@ -10,7 +10,7 @@ const Hero = () => {
         
         initial={{opacity: 0, scale: 0, x: 400}}
         whileInView={{opacity: 1, scale: 1, x:0}}
-        transition={{duration: 0.6}}
+        transition={{duration: 0.7}}
         viewport={{once: true}}
         >
           <h1>THIS IS THE ART MARKET, HAVE SOME FUN! </h1> 
