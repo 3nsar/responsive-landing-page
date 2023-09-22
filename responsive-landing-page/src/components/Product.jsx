@@ -23,29 +23,30 @@ const Product = () => {
     
     fetchData()
    
-  },[id])
+  },[id]) 
 
+  
 
   if(loading){
       return (
         <div className='loading-container'>LOADING....</div>
       )
-  }else{
-    return(
-      <div className='product-container'>
-      <div className="product-content">
-      <img src={product.thumbnail} alt=" " />
-        <p>{product.brand}</p>
-        <p>{product.title}</p>
-        <p>{product.price}$</p>
+   }else{
+      return(
+        <div className='product-container'>
+        <div className="product-content">
+        <img src={product.thumbnail} alt=" " />
+          <p>{product.brand}</p>
+          <p>{product.title}</p>
+          <p>{product.price}$</p>
+        </div>
+        <div className="product-btns">
+            <Link  to={`/product/${product.id - 1}`}><button>BACK</button></Link>
+            <Link  to={`/product/${product.id + 1}`}><button>NEXT</button></Link>  
+        </div>
       </div>
-      <div className="product-btns">
-          <Link  to={`/product/${product.id - 1}`}><button>BACK</button></Link>
-          <Link  to={`/product/${product.id + 1}`}><button>NEXT</button></Link>  
-      </div>
-    </div>
-    )
-  }
+     ) 
+   }
 }
 
 export default Product

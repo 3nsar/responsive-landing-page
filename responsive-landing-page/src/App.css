@@ -319,6 +319,7 @@ body{
   margin-bottom: 100px;
 }
 
+
 @media (max-width: 1200px) {
   .gallery-container img {
     height: 150px; 

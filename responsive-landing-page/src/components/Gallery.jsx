@@ -13,7 +13,7 @@ const Gallery = () => {
             console.log(res.data)
         }
         fetchData()
-    },[]);
+    },[]);                                                                            
 
     return (
         <div className='gallery-container'>
