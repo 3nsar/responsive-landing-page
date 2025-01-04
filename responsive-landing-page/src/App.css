@@ -132,7 +132,7 @@ body{
 /*======== HERO =======*/
 
 .hero-container{
-  background-image: linear-gradient(to top, #ea00ff 0%, #000000  100%);
+  background-image: linear-gradient(to top, #ea00ff 100%, #000000  50%);
   height: 100vh;
   display: flex;
   align-items: center;
